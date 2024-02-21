@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//    higher order function
+
+//      function higher(a,b,fun){
+//         let result=a+b;
+//         fun(result);
+
+//      }
+//      higher(10,20,function(data){
+// console.log(data)
+//      })
+
+// function higher(a,b,c){
+//     let result=a+b;
+//     c(result);
+// }
+// function showData(a){
+//     console.log(a)
+// }
+// higher(1,2,showData)
+
+    //  function higher(a,b,fun){
+    //     let result=a+b;
+    //     fun(result);
+
+    //  }
+    //  higher(10,20,(val)=>console.log(val))
+
+
+
+    // pure function 
+    // in this pure functon we give input as a calllback then result produced as same jo hum ne input die hoti hai
+//     function pure(a,b){
+//         return a*b;
+//     }
+
+// let showData=pure(10,2)
+// console.log(showData)
+
+
+// impure funcion
+
+// let c=10;
+// function impure(a,b)
+// {
+//     console.log(a+b+c)
+// }
+// impure(10,20)
+// in this impure function we pass same input and get diff output
+
+
+                //  closure
+
+// in this closure we can outputer function value in inner function this is also called lexical scop
+
+
+// function closure(a,b){
+//     let c=20;
+//     console.log(b)
+//     return{
+//         getinner:function(){
+//             return a+b+c;
+//         }
+//     }
+// }
+// let sum =closure(20,3)
+// let sum1=sum.getinner();
+// console.log(sum1)
+// console.log(sum.getinner())
+
+                        // 2nd method
+    //  function closure(a,b){
+    //     // console.log(a+b)
+    //     function innerfu(){
+    //  return a+b; 
+    //     }
+    //     return innerfu;
+    //  }                           
+    //  let sum=closure(13,20);
+    //  console.log(sum())
+
+    // Map, filter, and reduce
+    // map
+
+    // let array=[10,20,30,40,50];
+    // array.map((data,index)=>{
+    //     console.log(data)
+    // })
+    // array.map(data=>console.log(data))
+        //  filter
+        // let fil=array.filter((data,index)=>{
+        //     return data>=40;
+        // });
+        // console.log(fil)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+// Asynchronous JavaScript:
+                         // callback function
+// function callback(){
+//     document.write("Hello i am shahid and i am founder and ceo ")
+// }
+// function callback2(){
+//     document.write("I want to become an software engineer")
+// }
+// callback()
+// callback2()
+
+
+// function callback(xyz)
+// {
+// console.log(`this is a call back value ${xyz}`)
+// }
+// function callback2(a,b,c){
+//     let sum=0;
+//     sum=a+b+c;
+//     return sum;
+// }
+// let callfun=callback2(10,20,30)
+// callback(callfun)
+
+// 3rd method
+
+// function callback1(receive){
+// console.log(receive)
+// }
+// function callback2(x,y,callfunction){
+// let sum=x+y;
+// callfunction(sum)
+// }
+// callback2(30,20,callback1)
+
+
+
+                             // Promises
+// let comlete=true
+// let pro=new Promise((resolve, reject) => { 
+//     if(comlete){
+//      resolve("true")
+//     }
+//     else{
+//         reject("failure")
+//     }
+
+// })
+// console.log(pro)
+
+// with function
+
+// function pro(data){
+//     return new Promise((resolve, reject) => { 
+//  if(data){
+//     resolve("true")
+//  }
+//  else{
+//     reject("failure")
+//  }
+//      })
+// }
+// console.log(pro(false))
+
+
+// function pro(data){
+//     return new Promise((resolve, reject) => { 
+//  if(data){
+//     resolve("true")
+//  }
+//  else{
+//     reject("failure")
+//  }
+//      })
+// }
+// let passData=()=>{
+//     console.log("pass")
+// }
+// let failData=()=>{
+//     console.log("false")
+// }
+// pro(true).then(passData)
+// pro(true).catch(failData)
+
+
+// function pro(data){
+//     return new Promise((resolve, reject) => { 
+// console.log("Fetch the data")
+//         setTimeout(() => {
+//     if(data){
+//     resolve("true")
+//  }
+//  else{
+//     reject("failure")
+//  } 
+// }, 3000);
+//      })
+// }
+// let passData=()=>{
+//     console.log("pass")
+// }
+// let failData=()=>{
+//     console.log("false")
+// }
+// // pro(true).then(passData)
+// // pro(true).catch(failData)
+// // pro(true).then(passData).catch(failData)
+// pro(false).then((result)=>{
+//     console.log(result)
+// }).catch((result)=>{
+//     console.log(result)
+// })
+
+
+
+// mehtod others
+
+// function promisesData(a,b){
+// return new Promise((resolve, reject) => { 
+// let total=a/b;
+// if(a,b)
+// {
+//     console.log(`data ${total}`)
+// }
+// else{
+//     console.log("no found data")
+// } })
+// }
+// promisesData(10,2).then((result)=>{
+//     console.log(result)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+
+
+                                     // Async/await
+// async
+
+// async is used to return a Promise
+// let promis= async function(){
+//     return "hello";
+// }
+// // console.log(promis())
+// promis().then((result)=>{
+//     console.log(result)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+// await
+
+// async function datafetch(){
+//     console.log("A")
+//     console.log("b")
+//    await console.log("c")
+//        console.log("e")
+// }
+// console.log("x")
+// datafetch();
+// console.log("y")
+// await is used await ka oper wala chalta hai  jab await per ata hai tu stop ho jata hai baki print krwate rahata hai
+
+
+// async function datafetch(){
+// let respons=await fetch("https://dummyjson.com/products")
+// let student =await respons.json()
+// return student;
+// }
+// // console.log("x")
+// let data= datafetch();
+// datafetch().then((result)=>{
+//     console.log(result)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+// console.log("y")
+</script>
+    
+</body>
+</html>
